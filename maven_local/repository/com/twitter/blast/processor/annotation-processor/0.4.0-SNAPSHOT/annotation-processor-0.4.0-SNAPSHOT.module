@@ -1,0 +1,558 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.twitter.blast.processor",
+    "module": "annotation-processor",
+    "version": "0.4.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.2",
+      "buildId": "mozboelt4nab7izym55ylgaque"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup",
+          "module": "javapoet",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "extension-api-annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast",
+          "module": "bom",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "annotation-processor-0.4.0-SNAPSHOT.jar",
+          "url": "annotation-processor-0.4.0-SNAPSHOT.jar",
+          "size": 113587,
+          "sha512": "e3644be63619140b574e7317bb64a0c4f73271a4c28c0df3040d88e664cc95ebb198796aa540ade1d2d409ed03da22f57c47f4b026f77e7cb1c7c8670852759a",
+          "sha256": "389b956d2c412efcba6c823d408ed00e181e989bac4a03476cab7cc2d857831a",
+          "sha1": "ad112e7432d43161944d52091915d83c1e9a07a0",
+          "md5": "685da58715e0f7a45d9cb83d40113ad7"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-protobuf",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.twitter.blast.processor",
+              "name": "annotation-processor-common",
+              "version": "unspecified"
+            }
+          ]
+        },
+        {
+          "group": "com.google.auto.service",
+          "module": "auto-service-annotations",
+          "version": {
+            "requires": "1.0-rc7"
+          }
+        },
+        {
+          "group": "com.google.dagger",
+          "module": "dagger",
+          "version": {
+            "requires": "2.26"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.7"
+          }
+        },
+        {
+          "group": "com.squareup.inject",
+          "module": "assisted-inject-annotations-dagger2",
+          "version": {
+            "requires": "0.5.2"
+          }
+        },
+        {
+          "group": "com.twitter.scythe",
+          "module": "extension-annotation-processor",
+          "version": {
+            "requires": "0.3.3"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.twitter.scythe",
+              "name": "extension-annotation-processor-runtime"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup",
+          "module": "javapoet",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "extension-api-annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast",
+          "module": "bom",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "annotation-processor-0.4.0-SNAPSHOT.jar",
+          "url": "annotation-processor-0.4.0-SNAPSHOT.jar",
+          "size": 113587,
+          "sha512": "e3644be63619140b574e7317bb64a0c4f73271a4c28c0df3040d88e664cc95ebb198796aa540ade1d2d409ed03da22f57c47f4b026f77e7cb1c7c8670852759a",
+          "sha256": "389b956d2c412efcba6c823d408ed00e181e989bac4a03476cab7cc2d857831a",
+          "sha1": "ad112e7432d43161944d52091915d83c1e9a07a0",
+          "md5": "685da58715e0f7a45d9cb83d40113ad7"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "junit",
+          "module": "junit",
+          "version": {
+            "requires": "4.12"
+          }
+        },
+        {
+          "group": "org.assertj",
+          "module": "assertj-core",
+          "version": {
+            "requires": "3.17.2"
+          }
+        },
+        {
+          "group": "org.mockito",
+          "module": "mockito-core",
+          "version": {
+            "requires": "2.28.2"
+          }
+        },
+        {
+          "group": "com.nhaarman.mockitokotlin2",
+          "module": "mockito-kotlin",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "com.google.truth",
+          "module": "truth",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "com.google.testing.compile",
+          "module": "compile-testing",
+          "version": {
+            "requires": "0.18"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "extension-api-annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.twitter.blast.processor",
+              "name": "extension-api-annotation-processor-test-fixtures",
+              "version": "unspecified"
+            }
+          ]
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.twitter.blast.processor",
+              "name": "core-test-fixtures",
+              "version": "unspecified"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "annotation-processor-0.4.0-SNAPSHOT-test-fixtures.jar",
+          "url": "annotation-processor-0.4.0-SNAPSHOT-test-fixtures.jar",
+          "size": 3748,
+          "sha512": "bd788483dc84e99dd3029fc2b4363b0184d26c624fca9d6604166583625ad2e97664cc691b6332fea848db5572441456f5ff8d7d25df660313ae63ef9f83c0d9",
+          "sha256": "e12ee64c3e3effb4ba6da3485dd6cb0bab97e972e4be980d18a5a194f6c3c904",
+          "sha1": "972a7ec5fa6e4dc221c24145195710c819436582",
+          "md5": "a4e799caeda4a121a5ca0c57fde23661"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.twitter.blast.processor",
+          "name": "annotation-processor-test-fixtures",
+          "version": "unspecified"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "junit",
+          "module": "junit",
+          "version": {
+            "requires": "4.12"
+          }
+        },
+        {
+          "group": "org.assertj",
+          "module": "assertj-core",
+          "version": {
+            "requires": "3.17.2"
+          }
+        },
+        {
+          "group": "org.mockito",
+          "module": "mockito-core",
+          "version": {
+            "requires": "2.28.2"
+          }
+        },
+        {
+          "group": "com.nhaarman.mockitokotlin2",
+          "module": "mockito-kotlin",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "com.google.truth",
+          "module": "truth",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "com.google.testing.compile",
+          "module": "compile-testing",
+          "version": {
+            "requires": "0.18"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "extension-api-annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.twitter.blast.processor",
+              "name": "extension-api-annotation-processor-test-fixtures",
+              "version": "unspecified"
+            }
+          ]
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.twitter.blast.processor",
+              "name": "core-test-fixtures",
+              "version": "unspecified"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "annotation-processor-0.4.0-SNAPSHOT-test-fixtures.jar",
+          "url": "annotation-processor-0.4.0-SNAPSHOT-test-fixtures.jar",
+          "size": 3748,
+          "sha512": "bd788483dc84e99dd3029fc2b4363b0184d26c624fca9d6604166583625ad2e97664cc691b6332fea848db5572441456f5ff8d7d25df660313ae63ef9f83c0d9",
+          "sha256": "e12ee64c3e3effb4ba6da3485dd6cb0bab97e972e4be980d18a5a194f6c3c904",
+          "sha1": "972a7ec5fa6e4dc221c24145195710c819436582",
+          "md5": "a4e799caeda4a121a5ca0c57fde23661"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.twitter.blast.processor",
+          "name": "annotation-processor-test-fixtures",
+          "version": "unspecified"
+        }
+      ]
+    },
+    {
+      "name": "commonSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "annotation-processor-0.4.0-SNAPSHOT-common-sources.jar",
+          "url": "annotation-processor-0.4.0-SNAPSHOT-common-sources.jar",
+          "size": 1464,
+          "sha512": "bfc809203dba836b9d86f0d62d4b92ad4fe6082f90de72a5c8c309970a0839b4ed01e414372fb02481fc1ce3cb40ff8ce0d34e06e0d2d9a529b0be1022dfb0dc",
+          "sha256": "b7ebfe96a40c787d74bfc28353261651b4db91afd7bd851118b31d18ed7fd2d3",
+          "sha1": "7765421d2e7e5c4c819166ae5465bd2bc3aa4859",
+          "md5": "367ddc16c1c62697a0254662429212a0"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.twitter.blast.processor",
+          "name": "annotation-processor-common",
+          "version": "unspecified"
+        }
+      ]
+    },
+    {
+      "name": "commonApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "annotation-processor-0.4.0-SNAPSHOT-common.jar",
+          "url": "annotation-processor-0.4.0-SNAPSHOT-common.jar",
+          "size": 2011,
+          "sha512": "964e7ad5471878acffc78c04bb873825ba3414669fc54bf6c58f418193dffb6919bb97404ebf022d76247999dd6f26639a5e1abe5de658a74ef28a338986535e",
+          "sha256": "71f7bcac2a9ed5614acfaf399e0846f4719711458a4a76bf68fa518f38be29e6",
+          "sha1": "9cf6ac1212f1fbee0205f75f5f88bc244019017d",
+          "md5": "61379b92dea350fa2ac512967544f154"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.twitter.blast.processor",
+          "name": "annotation-processor-common",
+          "version": "unspecified"
+        }
+      ]
+    },
+    {
+      "name": "commonRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "annotation-processor-0.4.0-SNAPSHOT-common.jar",
+          "url": "annotation-processor-0.4.0-SNAPSHOT-common.jar",
+          "size": 2011,
+          "sha512": "964e7ad5471878acffc78c04bb873825ba3414669fc54bf6c58f418193dffb6919bb97404ebf022d76247999dd6f26639a5e1abe5de658a74ef28a338986535e",
+          "sha256": "71f7bcac2a9ed5614acfaf399e0846f4719711458a4a76bf68fa518f38be29e6",
+          "sha1": "9cf6ac1212f1fbee0205f75f5f88bc244019017d",
+          "md5": "61379b92dea350fa2ac512967544f154"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.twitter.blast.processor",
+          "name": "annotation-processor-common",
+          "version": "unspecified"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "annotation-processor-0.4.0-SNAPSHOT-sources.jar",
+          "url": "annotation-processor-0.4.0-SNAPSHOT-sources.jar",
+          "size": 12540,
+          "sha512": "88f205e77a33f67d1dd6b4e4fd4f10ad50b974145be9cb888510310d4c6ed93a3461d39dd54ae2650d2cb4688e667b0bbb0c22ada7d54e1e81b04e2c3bc49761",
+          "sha256": "38b7ae07e07b7fa6b38ac610ae1191d19486099d258f568ddbaf3eeb1271491d",
+          "sha1": "70df8baaf65e43e5cc1295da3831e9adb91f1a13",
+          "md5": "aa182e87579dfe18c0e78da14d1aed78"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.twitter.blast",
+    "module": "bom",
+    "version": "0.4.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.2",
+      "buildId": "mozboelt4nab7izym55ylgaque"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "com.twitter.blast",
+          "module": "gradle-plugin",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast",
+          "module": "util",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.ast",
+          "module": "core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.ast",
+          "module": "intellij",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.ast",
+          "module": "javapoet",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.ast",
+          "module": "javax",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "extension-api-annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "extension-api-core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "com.twitter.blast",
+          "module": "gradle-plugin",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast",
+          "module": "util",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.ast",
+          "module": "core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.ast",
+          "module": "intellij",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.ast",
+          "module": "javapoet",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.ast",
+          "module": "javax",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "extension-api-annotation-processor",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.twitter.blast.processor",
+          "module": "extension-api-core",
+          "version": {
+            "requires": "0.4.0-SNAPSHOT"
+          }
+        }
+      ]
+    }
+  ]
+}
